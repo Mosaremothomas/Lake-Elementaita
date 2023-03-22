@@ -25,7 +25,6 @@ html{
     right: 0;
     left: 0;
     box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .1);
-  
 }
 .header #logo{
     width: 80px;
@@ -38,7 +37,8 @@ html{
 .header .navbar a{
     font-size: 1.7rem;
     margin-left: 1.5rem;
-    color: var(--maincolor);
+    color: white;
+    font-weight: bold;
 
 }
 .header .navbar a:hover{
@@ -81,7 +81,7 @@ html{
 }
 
 .main-background{
-    background: url(imgaes/andre-alexander-CKyD4ex3hUQ-unsplash.jpg);
+    background: url(imgaes/hero_alt.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

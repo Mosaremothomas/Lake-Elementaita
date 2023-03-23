@@ -10,15 +10,25 @@
     <title>Lake Elementaita</title>
 </head>
 <body>
-    <nav class="header">
-        <a href="#" id="logo">Elementaita</a>
-        <ul>
-            <li><a href="#hero">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#">gallery</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>        
-    </nav>
+    <header class="nav_wrapper">
+        <nav class="nav_bar">
+            <div class="logo">
+                <h1>Elementaita</h1>
+            </div>
+            <ul class="nav_links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
     <main>
         <section class="hero" id="hero">
             <div class="container">
@@ -27,33 +37,105 @@
             </div>        
         </section> 
 
-        <section id="about">
+        <section class="about" id="about">
             <div class="container">
-
+                <h1 class="section_heading">Our Story</h1>
+                <p>Lake Elementaita Manor is a family style container lodge with stunning views of Lake Elementaita and sleeping warrior hills. It currently has 8 spacious rooms tastefully furnished with instant showers, satelite TVs, wardrobes and other basic amenities.</p>
+                <p>The Manor is situated 1.5 Kms from the Nairobi - Nakuru highwary (No noise from the highway).</p>
             </div>
         </section>
 
-        <section id="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
-                <h1>Our Gallery</h1>
+                <h1 class="section_heading">Our Gallery</h1>
                 <div class="gallery_wrapper">
                     <div class="gallery">
-                        <img src="" alt="">
-                        <p>The restaurant</p>
+                        <img src="assets/images/lovers_garden.jpg" alt="">
+                        <div class="description">
+                            <h4>Lover's Garden</h4>
+                            <p>Enjoy quite moments with your loved ones at the lush green gardens.</p>
+                        </div>
                     </div>
                     <div class="gallery">
-                        <img src="" alt="">
-                        <p>The Club</p>
+                        <img src="assets/images/lounge.jpg" alt="">
+                        <div class="description">
+                            <h4>Big 5 Lounge</h4>
+                            <p>Has a long grand dining table for upto 20 pax tuned to your liking.</p>
+                        </div>
                     </div>
                     <div class="gallery">
-                        <img src="" alt="">
-                        <p>Outdoors</p>
+                        <img src="assets/images/sweeties_restaurant.jpg" alt="">
+                        <div class="description">
+                            <h4>Sweetie Restaurant</h4>
+                            <p>Enjoy the outdoor buffet breakfast at the sweetie restaurant.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
+        <section class="rooms" id="rooms">
+            <div class="container">
+                <h1 class="section_heading">Our Rooms</h1>
+                <div class="rooms_wrapper">
+                    <div class="room">
+                        <div class="image">
+                            <img src="assets/images/superior_room.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h4>Superior Room</h4>
+                            <h5>Lake Elementaita Manor</h5>
+                            <p>Experience the lakeside traquility from the comfort of one of our superior rooms, minimally designed to complement the peaceful and quiet enviroment.</p>
+                            <p>The Lodge has 8 spacious rooms tastefully furnished rooms suitable for families.</p>
+                            <p>All the rooms are fully furnished with instant showers, satelite TVs, wardrobes and other basic amenities.</p>
+                            <div class="room_features">
+                                <div class="feature">
+                                    <p>Beds</p>
+                                    <p>5 <span class="icon icon-bed"></span></p>
+                                </div>
+                                <div class="feature">
+                                    <p>Guests</p>
+                                    <p>8 <span class="icon icon-users"></span></p>
+                                </div>
+                                <div class="feature">
+                                    <p>Bathrooms</p>
+                                    <p>3 <span class="icon icon-bath"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <div class="image">
+                            <img src="assets/images/bed.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h4>Standard Room</h4>
+                            <h5>Lake Elementaita Manor</h5>
+                            <p>Experience the lakeside traquility from the comfort of one of our superior rooms, minimally designed to complement the peaceful and quiet enviroment.</p>
+                            <p>The Lodge has 8 spacious rooms tastefully furnished rooms suitable for families.</p>
+                            <p>All the rooms are fully furnished with instant showers, satelite TVs, wardrobes and other basic amenities.</p>
+                            <div class="room_features">
+                                <div class="feature">
+                                    <p>Beds</p>
+                                    <p>2 <span class="icon icon-bed"></span></p>
+                                </div>
+                                <div class="feature">
+                                    <p>Guests</p>
+                                    <p>4 <span class="icon icon-users"></span></p>
+                                </div>
+                                <div class="feature">
+                                    <p>Bathrooms</p>
+                                    <p>2 <span class="icon icon-bath"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
             <div class="container">
 
             </div>
@@ -61,13 +143,12 @@
     </main>
 
     <footer>
-        <p>All right reserved &copy; 2023</p>
+        <p>Lake Elementaita. All right reserved &copy; 2023</p>
     </footer>
 
     
 
-<!-- booking secton ended -->
-<div class="award-winning-hotel">
+<!-- <div class="award-winning-hotel">
     <h1>award <span>winning</span> hotels</h1>
     <div class="main-hotel">
         <div class="inner-award">
@@ -107,9 +188,10 @@
     </div>
     
 </div>
-<!-- award winning ended -->
-<!-- roomes -->
-   <div class="our-rooms">
+
+
+
+<div class="our-rooms">
        <h1>Our <span>rooms</span></h1>
        <div class="inner-rooms">
            <div class="room-box">
@@ -145,7 +227,7 @@
             
         </div>
        </div>
-   </div>
-    <script src="script.js"></script>
+   </div> -->
+    <script src="assets/js/navbar.js"></script>
 </body>
 </html>

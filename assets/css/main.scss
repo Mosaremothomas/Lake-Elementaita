@@ -166,10 +166,42 @@ main{
 footer{
     background: rgb(0, 0, 0);
     color: #fff;
-    padding: 1em;
-    p{
-        text-align: center;
-        margin: unset;
+    h4{
+        font-size: 1.2em;
+        font-weight: bold;
+        font-style: italic;
+    }
+    ul{
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                color: rgba(255, 255, 255, .7);
+            }
+        }
+    }
+    .container{
+        .socials{
+            p{
+                margin: 1px;
+                font-weight: bold;
+                letter-spacing: 1.2px;
+            }
+            ul{
+                display: flex;
+                li{
+                    margin: 1em auto 1em 0;
+                }
+            }
+        }
+    }
+    .copyright{
+        border-top: 1px solid rgb(105, 105, 105);
+        padding: 15px 0;
+        p{
+            text-align: center;
+            margin: unset;
+        }
     }
 }
 

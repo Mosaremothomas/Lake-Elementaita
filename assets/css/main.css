@@ -171,6 +171,7 @@ main .gallery .container .gallery_wrapper .gallery {
   box-shadow: 2px 1px 15px black;
   height: 300px;
   margin: 18px auto;
+  position: relative;
 }
 main .gallery .container .gallery_wrapper .gallery img {
   width: 100%;
@@ -178,25 +179,26 @@ main .gallery .container .gallery_wrapper .gallery img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 12px;
-  position: relative;
 }
 main .gallery .container .gallery_wrapper .gallery .description {
   position: absolute;
-  margin: -6.4em 5px;
+  bottom: 0;
   border-radius: 12px;
-  width: 90%;
-  padding: 8px 4px 0px;
-  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 2px 6px;
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
   color: #fff;
   text-align: center;
 }
 main .gallery .container .gallery_wrapper .gallery .description h4 {
   margin-bottom: unset;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 main .gallery .container .gallery_wrapper .gallery .description p {
   font-style: italic;
+  font-weight: 1em;
+  margin: unset;
 }
 main .rooms .container h1 {
   text-align: center;
@@ -289,7 +291,7 @@ footer .copyright p {
     grid-template-columns: 1fr 1fr 1fr;
   }
   main .gallery .container .gallery_wrapper .gallery {
-    margin: auto 1em;
+    margin: auto 0.5em;
     border-radius: unset;
     box-shadow: unset;
   }
@@ -298,7 +300,6 @@ footer .copyright p {
   }
   main .gallery .container .gallery_wrapper .gallery .description {
     border-radius: unset;
-    width: 26%;
   }
   main .rooms .container .rooms_wrapper {
     display: grid;

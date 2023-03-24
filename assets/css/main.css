@@ -9,87 +9,60 @@ html {
   overflow-x: hidden;
 }
 
-.nav_wrapper {
+.top_navbar {
   position: sticky;
   top: 0;
-  z-index: 10;
-}
-
-.nav_bar {
+  z-index: 0;
+  height: 8vh;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 1px 5px #000;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  padding: 3px;
-  background: rgba(255, 255, 255, 0.6);
-  font-family: sans-serif, helvetica;
+  justify-content: space-between;
+  padding: 0.5em 1em;
 }
-
-.logo h1 {
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 17px;
+.top_navbar .logo a {
+  text-decoration: none;
+  color: #efefef;
+  letter-spacing: 2.5px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
-
-.nav_links {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
+.top_navbar .nav_links {
   list-style: none;
+  position: absolute;
+  right: 0;
+  height: 92vh;
+  top: 8vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
 }
-
-.nav_links a {
-  color: #000000;
+.top_navbar .nav_links li {
+  opacity: 0;
+}
+.top_navbar .nav_links li a {
+  color: #efefef;
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1.3rem;
 }
-
-.burger {
-  display: none;
-  cursor: pointer;
+.top_navbar .burger {
+  display: pointer;
 }
-
-.burger div {
+.top_navbar .burger .line {
   width: 25px;
   height: 2px;
-  background-color: #000000;
+  background-color: #efefef;
   margin: 5px;
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px) {
-  .nav_links {
-    width: 60%;
-  }
-}
-@media screen and (max-width: 760px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav_links {
-    position: absolute;
-    right: 0;
-    height: 92vh;
-    top: 8vh;
-    background: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .nav_links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-  }
-}
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -101,7 +74,7 @@ html {
   }
 }
 .nav_active {
-  transform: translateX(0%);
+  transform: translateX(0%) !important;
 }
 
 .toggle .line1 {
@@ -116,6 +89,34 @@ html {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+@media screen and (min-width: 726px) {
+  .top_navbar {
+    background: #ffffff;
+    padding: 0.5em 9%;
+  }
+  .top_navbar .logo a {
+    font-size: 1.2rem;
+    color: #000;
+  }
+  .top_navbar .nav_links {
+    position: unset;
+    transform: unset;
+    height: unset;
+    background: unset;
+    align-items: unset;
+    flex-direction: row;
+  }
+  .top_navbar .nav_links li {
+    opacity: 1;
+  }
+  .top_navbar .nav_links li a {
+    font-size: 1rem;
+    color: #000;
+  }
+  .top_navbar .burger {
+    display: none;
+  }
+}
 main section {
   padding: 15px 0 0;
 }
@@ -171,6 +172,7 @@ main .gallery .container .gallery_wrapper .gallery {
   box-shadow: 2px 1px 15px black;
   height: 300px;
   margin: 18px auto;
+  position: relative;
 }
 main .gallery .container .gallery_wrapper .gallery img {
   width: 100%;
@@ -178,25 +180,26 @@ main .gallery .container .gallery_wrapper .gallery img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 12px;
-  position: relative;
 }
 main .gallery .container .gallery_wrapper .gallery .description {
   position: absolute;
-  margin: -6.4em 5px;
+  bottom: 0;
   border-radius: 12px;
-  width: 90%;
-  padding: 8px 4px 0px;
-  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 2px 6px;
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
   color: #fff;
   text-align: center;
 }
 main .gallery .container .gallery_wrapper .gallery .description h4 {
   margin-bottom: unset;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 main .gallery .container .gallery_wrapper .gallery .description p {
   font-style: italic;
+  font-weight: 1em;
+  margin: unset;
 }
 main .rooms .container h1 {
   text-align: center;
@@ -289,7 +292,7 @@ footer .copyright p {
     grid-template-columns: 1fr 1fr 1fr;
   }
   main .gallery .container .gallery_wrapper .gallery {
-    margin: auto 1em;
+    margin: auto 0.5em;
     border-radius: unset;
     box-shadow: unset;
   }
@@ -298,7 +301,6 @@ footer .copyright p {
   }
   main .gallery .container .gallery_wrapper .gallery .description {
     border-radius: unset;
-    width: 26%;
   }
   main .rooms .container .rooms_wrapper {
     display: grid;

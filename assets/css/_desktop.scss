@@ -16,7 +16,7 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     .gallery {
-                        margin: auto 1em;
+                        margin: auto 0.5em;
                         border-radius: unset;
                         box-shadow: unset;
                         img{
@@ -24,7 +24,6 @@
                         }
                        .description {                        
                             border-radius: unset;
-                            width: 26%;
                        }
                     }
                 }

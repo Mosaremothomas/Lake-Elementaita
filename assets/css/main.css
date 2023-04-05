@@ -9,6 +9,10 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .top_navbar {
   position: sticky;
   top: 0;
@@ -53,7 +57,7 @@ html {
   font-size: 1.3rem;
 }
 .top_navbar .burger {
-  display: pointer;
+  display: none;
 }
 .top_navbar .burger .line {
   width: 25px;
@@ -142,7 +146,7 @@ main .hero {
   display: grid;
   place-items: center;
   text-align: center;
-  background: linear-gradient(160deg, rgba(228, 74, 100, 0.4), rgba(0, 0, 0, 0.5)), url(../images/hero_alt.jpg);
+  background: linear-gradient(160deg, rgba(228, 74, 100, 0.4), rgba(0, 0, 0, 0.5)), url(../images/hero_section.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -163,10 +167,10 @@ main .hero .container p {
 main .about .container h1 {
   text-align: center;
 }
-main .gallery .container h1 {
+main .our_story .container h1 {
   text-align: center;
 }
-main .gallery .container .gallery_wrapper .gallery {
+main .our_story .container .our_story_wrapper .story {
   background: linear-gradient(165deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
   border-radius: 12px;
   box-shadow: 2px 1px 15px black;
@@ -174,14 +178,14 @@ main .gallery .container .gallery_wrapper .gallery {
   margin: 18px auto;
   position: relative;
 }
-main .gallery .container .gallery_wrapper .gallery img {
+main .our_story .container .our_story_wrapper .story img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 12px;
 }
-main .gallery .container .gallery_wrapper .gallery .description {
+main .our_story .container .our_story_wrapper .story .description {
   position: absolute;
   bottom: 0;
   border-radius: 12px;
@@ -191,15 +195,24 @@ main .gallery .container .gallery_wrapper .gallery .description {
   color: #fff;
   text-align: center;
 }
-main .gallery .container .gallery_wrapper .gallery .description h4 {
+main .our_story .container .our_story_wrapper .story .description h4 {
   margin-bottom: unset;
   font-size: 1.2em;
   font-weight: bold;
 }
-main .gallery .container .gallery_wrapper .gallery .description p {
+main .our_story .container .our_story_wrapper .story .description p {
   font-style: italic;
   font-weight: 1em;
   margin: unset;
+}
+main .gallery .container h1 {
+  text-align: center;
+}
+main .gallery .container .gallery_wrapper .gallery {
+  margin: 1em 0px;
+}
+main .gallery .container .gallery_wrapper .gallery img {
+  width: 100%;
 }
 main .rooms .container h1 {
   text-align: center;
@@ -287,20 +300,25 @@ footer .copyright p {
     left: 44%;
     width: 12%;
   }
-  main .gallery .container .gallery_wrapper {
+  main .our_story .container .our_story_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  main .gallery .container .gallery_wrapper .gallery {
+  main .our_story .container .our_story_wrapper .story {
     margin: auto 0.5em;
     border-radius: unset;
     box-shadow: unset;
   }
-  main .gallery .container .gallery_wrapper .gallery img {
+  main .our_story .container .our_story_wrapper .story img {
     border-radius: unset;
   }
-  main .gallery .container .gallery_wrapper .gallery .description {
+  main .our_story .container .our_story_wrapper .story .description {
     border-radius: unset;
+  }
+  main .gallery .container .gallery_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
   }
   main .rooms .container .rooms_wrapper {
     display: grid;

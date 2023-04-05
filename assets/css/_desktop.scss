@@ -10,12 +10,12 @@
                 }
             }
         }
-        .gallery {
+        .our_story {
             .container{
-                .gallery_wrapper{
+                .our_story_wrapper{
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
-                    .gallery {
+                    .story {
                         margin: auto 0.5em;
                         border-radius: unset;
                         box-shadow: unset;
@@ -25,6 +25,20 @@
                        .description {                        
                             border-radius: unset;
                        }
+                    }
+                }
+            }
+        }
+
+        .gallery{
+            .container{
+                .gallery_wrapper{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr ;
+                    
+                    gap: 1em;
+                    .gallery{
+                        
                     }
                 }
             }

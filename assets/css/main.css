@@ -286,6 +286,9 @@ footer .container .socials ul {
 footer .container .socials ul li {
   margin: 1em auto 1em 0;
 }
+footer .container .socials ul li .icon-instagram {
+  background: linear-gradient(45deg, #5851db, #833ab4, #e1306c, #fd1d1d);
+}
 footer .copyright {
   border-top: 1px solid rgb(105, 105, 105);
   padding: 15px 0;
@@ -299,6 +302,9 @@ footer .copyright p {
   main section .container .section_heading::after {
     left: 44%;
     width: 12%;
+  }
+  main .hero .container {
+    background: rgba(0, 0, 0, 0.1);
   }
   main .our_story .container .our_story_wrapper {
     display: grid;
@@ -319,6 +325,15 @@ footer .copyright p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
+  }
+  main .gallery .container .gallery_wrapper .gallery {
+    height: 280px;
+  }
+  main .gallery .container .gallery_wrapper .gallery img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 12px;
   }
   main .rooms .container .rooms_wrapper {
     display: grid;

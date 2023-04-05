@@ -214,6 +214,9 @@ footer{
                 display: flex;
                 li{
                     margin: 1em auto 1em 0;
+                    .icon-instagram{
+                        background: linear-gradient(45deg, #5851db, #833ab4, #e1306c, #fd1d1d);
+                    }
                 }
             }
         }

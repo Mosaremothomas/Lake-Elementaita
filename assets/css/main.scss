@@ -43,7 +43,7 @@ main{
         display: grid;
         place-items: center;
         text-align: center;
-        background: linear-gradient(160deg, rgba(228, 74, 100, 0.4), rgba(0, 0, 0, .5)), url(../images/hero_section.jpg);
+        background: url(../images/hero_section.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

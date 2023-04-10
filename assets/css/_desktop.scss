@@ -74,15 +74,19 @@
         }
     }
 
-
     footer{
-        h4{
-            font-style: unset;
-        }
         .container{
             display: grid;
-            grid-template-columns: repeat(4, auto);
-            padding: 1em 0 0;
+            grid-template-columns: 1fr 1fr;
+            padding: 12px 0px;
+            h4{
+                text-align: left;
+            }
+            .location{
+                iframe{
+                    height: 250px;
+                }
+            }
         }
     }
 }

@@ -1,0 +1,66 @@
+.Rooms {
+  padding: 10px 12px;
+}
+.Rooms h1 {
+  text-align: center;
+  margin: 5px 0px;
+}
+.Rooms .rooms_wrapper .room {
+  box-shadow: 1px 1px 10px black;
+  border-radius: 8px;
+  margin: 18px 0;
+}
+.Rooms .rooms_wrapper .room .image {
+  height: 18em;
+}
+.Rooms .rooms_wrapper .room .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.Rooms .rooms_wrapper .room .description {
+  padding: 8px 10px;
+}
+.Rooms .rooms_wrapper .room .description h4 {
+  font-weight: bold;
+}
+.Rooms .rooms_wrapper .room .description h5 {
+  font-weight: bold;
+  color: green;
+  font-size: 1em;
+}
+.Rooms .rooms_wrapper .room .description p {
+  margin: 1px auto;
+}
+.Rooms .rooms_wrapper .room .description .room_features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid rgb(216, 216, 216);
+  margin-top: 8px;
+}
+.Rooms .rooms_wrapper .room .description .room_features .feature p:nth-of-type(1) {
+  font-weight: 500;
+}
+.Rooms .rooms_wrapper .room .description .room_features .feature .icon {
+  color: green;
+}
+
+@media screen and (width >= 726px) {
+  .Rooms .rooms_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Rooms .rooms_wrapper .room {
+    margin: 0px 1em;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .Rooms .rooms_wrapper .room .image {
+    height: 100%;
+  }
+  .Rooms .rooms_wrapper .room .image img {
+    border-radius: 8px 0 0 8px;
+  }
+}/*# sourceMappingURL=rooms.css.map */

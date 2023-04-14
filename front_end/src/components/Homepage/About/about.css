@@ -1,0 +1,57 @@
+.About {
+  padding: 10px 12px;
+}
+.About h1 {
+  text-align: center;
+  margin: 5px 0px;
+}
+.About .about_content p {
+  margin: 6px 0px;
+  letter-spacing: 0.4px;
+}
+.About .our_story .story,
+.About .our_story img,
+.About .our_story .description {
+  border-radius: 12px;
+}
+.About .our_story .story {
+  height: 400px;
+  margin: 1em 0px;
+  position: relative;
+}
+.About .our_story .story img {
+  height: 100%;
+  width: 100%;
+}
+.About .our_story .story .description {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  color: #fff;
+  text-align: center;
+  padding: 10px 6px;
+}
+.About .our_story .story .description h4 {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 0px 0px 5px 0px;
+}
+.About .our_story .story .description p {
+  font-weight: bold;
+}
+
+@media screen and (width >= 726px) {
+  .About {
+    padding: 10px 5%;
+  }
+  .About .our_story {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px 1em;
+  }
+  .About .our_story .story,
+  .About .our_story img,
+  .About .our_story .description {
+    border-radius: unset;
+  }
+}/*# sourceMappingURL=about.css.map */

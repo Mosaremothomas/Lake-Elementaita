@@ -1,0 +1,45 @@
+.Hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 93vh;
+  background: url(./images/hero_section.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Hero .hero_info {
+  text-align: center;
+  padding: 10px 4px;
+  margin-top: 15%;
+}
+.Hero .hero_info h1 {
+  font-weight: bold;
+  font-size: 1.8em;
+}
+.Hero .hero_info p {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+@media screen and (width >= 726px) {
+  .Hero {
+    align-items: center;
+    height: 90vh;
+  }
+  .Hero .hero_info {
+    margin-top: unset;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+    width: 95%;
+    margin: auto;
+  }
+  .Hero .hero_info h1 {
+    font-size: 3.5em;
+  }
+  .Hero .hero_info p {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=hero.css.map */

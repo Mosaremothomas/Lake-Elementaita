@@ -9,7 +9,7 @@ import wine_glass from '../../../assets/wine_glass.png'
 
 export default function Gallery() {
     return (
-        <section className="Gallery">
+        <section className="Gallery" id="Gallery">
             <h1>Gallery</h1>
             <div className="gallery_wrapper">
                 <div className="gallery">

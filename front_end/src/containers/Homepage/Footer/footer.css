@@ -83,10 +83,13 @@ footer .copyright p {
     display: flex;
     align-items: center;
   }
-  footer .footer_wrapper .logo h4 {
+  footer .footer_wrapper .logo .logo_details {
+    text-align: center;
+  }
+  footer .footer_wrapper .logo .logo_details h4 {
     font-size: 1.5em;
   }
-  footer .footer_wrapper .logo p {
+  footer .footer_wrapper .logo .logo_details p {
     text-align: center;
     font-style: italic;
   }

@@ -4,7 +4,7 @@ import logo from '../../../assets/logo.png'
 
 export default function Footer() {
     return (
-        <footer id="contact">
+        <footer id="Contact">
             <div class="footer_wrapper">
                 <div className="logo">
                     <div className="logo_details">

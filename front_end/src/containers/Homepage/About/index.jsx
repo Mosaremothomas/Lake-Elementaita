@@ -6,7 +6,7 @@ import lovers_garden from '../../../assets/lovers_garden.png'
 
 export default function About() {
     return (
-        <section className="About">
+        <section className="About" id="About">
             <h1>Our Story</h1>
             <div className="about_content">
                 <p>Lake Elementaita Manor is a family style container lodge with stunning views of Lake Elementaita and sleeping warrior hills. It currently has 8 spacious rooms tastefully furnished with instant showers, satelite TVs, wardrobes and other basic amenities.</p>

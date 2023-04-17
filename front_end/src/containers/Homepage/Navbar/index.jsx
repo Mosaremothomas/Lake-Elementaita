@@ -5,7 +5,7 @@ export default function Navbar() {
     <header>
         <nav>
             <div className="logo">
-                <a href="#hero">Lake Elemenentaita Manor</a>
+                <a href="#hero">Lake Elemenentaita Manor......</a>
             </div>
             <ul className="nav_links">
                 <li><a href="#Hero">Home</a></li>

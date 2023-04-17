@@ -12,6 +12,7 @@
 }
 .Rooms .rooms_wrapper .room .image {
   height: 18em;
+  background: linear-gradient(rgb(3, 3, 3), rgb(129, 128, 128));
 }
 .Rooms .rooms_wrapper .room .image img {
   width: 100%;

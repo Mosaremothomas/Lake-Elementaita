@@ -11,6 +11,7 @@
 }
 .Gallery .gallery_wrapper .gallery {
   margin: 1em 0px;
+  background: linear-gradient(rgb(3, 3, 3), rgb(129, 128, 128));
 }
 .Gallery .gallery_wrapper .gallery img {
   width: 100%;

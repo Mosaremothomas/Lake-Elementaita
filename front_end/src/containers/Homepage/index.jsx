@@ -1,8 +1,9 @@
 import Hero from './Hero'
 import Navbar from './Navbar'
 import About from './About'
-import Gallery from './Gallery'
+import Services from './Services'
 import Rooms from './Rooms'
+import Gallery from './Gallery'
 import Footer from './Footer'
 
 export default function Homepage(){
@@ -11,8 +12,9 @@ export default function Homepage(){
             <Navbar />
             <Hero />
             <About />
-            <Gallery />
+            <Services />
             <Rooms />
+            <Gallery />            
             <Footer />
         </>
     )

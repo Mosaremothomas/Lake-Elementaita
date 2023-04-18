@@ -7,9 +7,10 @@ footer .footer_wrapper {
   text-align: center;
 }
 footer .footer_wrapper h4 {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 0px 0px 0.8em;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0px 0px 1em;
+  letter-spacing: 0.5px;
 }
 footer .footer_wrapper .logo,
 footer .footer_wrapper .socials,
@@ -33,12 +34,12 @@ footer .footer_wrapper .socials ul li {
   margin: 0.5em 0px;
   letter-spacing: 0.5px;
 }
+footer .footer_wrapper .socials ul li span {
+  margin: 0px 6px 0px 0px;
+}
 footer .footer_wrapper .socials ul li a {
   text-decoration: none;
   color: #fff;
-}
-footer .footer_wrapper .socials ul li a .icon-instagram {
-  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 footer .footer_wrapper .location iframe {
   width: 100%;
@@ -57,12 +58,16 @@ footer .copyright p {
   text-align: center;
 }
 
-@media screen and (width >= 726px) {
+@media screen and (width >= 600px) {
   footer .footer_wrapper {
     display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px 1em;
+  }
+}
+@media screen and (width >= 900px) {
+  footer .footer_wrapper {
     grid-template-columns: auto auto auto auto;
-    -moz-column-gap: 1em;
-         column-gap: 1em;
     padding: 10px 2%;
     text-align: left;
   }
@@ -70,7 +75,7 @@ footer .copyright p {
   footer .footer_wrapper .socials,
   footer .footer_wrapper .working_hours,
   footer .footer_wrapper .location {
-    padding: 8px 0px;
+    padding: 8px 10px;
     margin: 0px;
   }
   footer .footer_wrapper .logo h4,
@@ -82,6 +87,7 @@ footer .copyright p {
   footer .footer_wrapper .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   footer .footer_wrapper .logo .logo_details {
     text-align: center;
@@ -98,5 +104,11 @@ footer .copyright p {
   }
   footer .footer_wrapper .working_hours .info {
     padding: 0px;
+  }
+  footer .footer_wrapper .working_hours .info p:nth-child(1) {
+    font-weight: bold;
+  }
+  footer .footer_wrapper .working_hours .info p:nth-child(2) {
+    padding-left: 1em;
   }
 }/*# sourceMappingURL=footer.css.map */

@@ -5,9 +5,10 @@ footer{
         padding: 10px 12px;
         text-align: center;
         h4{
-            font-size: 1.2em;
-            font-weight: bold;
-            margin: 0px 0px 0.8em;
+            font-size: 1.1em;
+            font-weight:600;
+            margin: 0px 0px 1em;
+            letter-spacing: 0.5px;
         }
         .logo,
         .socials,
@@ -32,12 +33,12 @@ footer{
                 li{
                     margin: 0.5em 0px;
                     letter-spacing: 0.5px;
+                    span{
+                        margin: 0px 6px 0px 0px;                        
+                    }
                     a{
                         text-decoration: none;
-                        color: #fff;
-                        .icon-instagram{
-                            background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-                        }
+                        color: #fff;                                              
                     }
                 }
             }            
@@ -68,19 +69,28 @@ footer{
 }
 
 
-@media screen and (width >= 726px) {
-    footer{        
+@media screen and (width >= 600px) {
+    footer{
         .footer_wrapper{
             display: grid;
+            grid-template-columns: auto auto;
+            gap: 0px 1em;
+        }
+    }
+}
+
+
+@media screen and (width >= 900px) {
+    footer{        
+        .footer_wrapper{
             grid-template-columns: auto auto auto auto;      
-            column-gap: 1em;      
             padding: 10px 2%;
             text-align: left;
             .logo,
             .socials,
             .working_hours,
             .location{
-                padding: 8px 0px;      
+                padding: 8px 10px;      
                 margin: 0px;                          
                 h4{
                     text-align: left;                    
@@ -89,6 +99,7 @@ footer{
             .logo{
                 display: flex;
                 align-items: center;             
+                justify-content: center;
                 .logo_details{
                     text-align: center;
                     h4{
@@ -107,7 +118,13 @@ footer{
             }
             .working_hours{                
                 .info{                    
-                    padding: 0px;                    
+                    padding: 0px;   
+                    p:nth-child(1) {
+                        font-weight: bold;
+                    }
+                    p:nth-child(2){
+                        padding-left: 1em;
+                    }
                 }
             }
         }

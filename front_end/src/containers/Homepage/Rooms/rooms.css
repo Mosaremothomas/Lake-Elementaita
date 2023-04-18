@@ -48,18 +48,25 @@
   color: green;
 }
 
-@media screen and (width >= 726px) {
+@media screen and (width >= 900px) {
+  .Rooms {
+    padding: 5px 5% 10px;
+  }
+  .Rooms h1 {
+    margin: 2em 0px 10px;
+  }
   .Rooms .rooms_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2.5em;
   }
   .Rooms .rooms_wrapper .room {
-    margin: 0px 1em;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
   }
   .Rooms .rooms_wrapper .room .image {
     height: 100%;
+    border-radius: 8px 0px 0px 8px;
   }
   .Rooms .rooms_wrapper .room .image img {
     border-radius: 8px 0 0 8px;

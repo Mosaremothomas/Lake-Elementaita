@@ -1,36 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap');
+
 .Hero{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 93vh;
-    background: url(../../../assets/hero-section.png);
+    background: linear-gradient(120deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../../../assets/hero-section.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    filter: saturate(2);
     .hero_info{        
         text-align: center;
         padding: 10px 4px;
-        margin-top: 15%;
         h1{
             font-weight: bold;
-            font-size: 1.8em;
+            font-size: 2.4em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: 'Roboto Slab', sans-serif;
         }
         p{
-            font-weight: 500;
+            font-weight: 600;
             font-style: italic;
             font-size: 1.3em;
+            color: #fff;
         }
     }
 }
 
 @media screen and (width >= 726px){
     .Hero{
-        align-items: center;
         height: 90vh;
         .hero_info{
             margin-top: unset;
             color: #fff;
-            background: rgba(0,0,0,0.1);
             width: 95%;
             margin: auto;
             h1{

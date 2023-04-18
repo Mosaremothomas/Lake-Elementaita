@@ -1,3 +1,5 @@
+import { FaPhoneVolume, FaEnvelope, FaInstagram } from 'react-icons/fa'
+
 import './footer.css'
 
 import logo from '../../../assets/logo.png'
@@ -17,9 +19,9 @@ export default function Footer() {
                 <div class="socials">
                     <h4>Contacts</h4>
                     <ul>
-                        <li><span class="icon icon-phone"></span> +254 785 789 515</li>
-                        <li><span class="icon icon-envelope"></span> lakeelementaitamanor@gmail.com</li>
-                        <li><a href="https://www.instagram.com/lake_elementaita_manor/" target="_blank"><span class="icon icon-instagram"></span> lake_elementaita_manor</a></li>
+                        <li><span><FaPhoneVolume /></span>+254 785 789 515</li>
+                        <li><span><FaEnvelope /></span>lakeelementaitamanor@gmail.com</li>
+                        <li><a href="https://www.instagram.com/lake_elementaita_manor/" target="_blank"><span><FaInstagram /></span>lake_elementaita_manor</a></li>
                     </ul>
                 </div>
 

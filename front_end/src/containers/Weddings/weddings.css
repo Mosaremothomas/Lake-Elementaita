@@ -1,3 +1,89 @@
-.Weddings {
-  background: blue;
+.Weddings .content {
+  padding: 25px 5% 10px;
+}
+.Weddings .content p {
+  margin: 0.4em 0px;
+}
+.Weddings ul {
+  list-style-position: inside;
+}
+.Weddings .hero {
+  height: 100vh;
+  position: relative;
+}
+.Weddings .hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Weddings .hero .hero_content_wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(100deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+  color: #fff;
+}
+.Weddings .hero .hero_content_wrapper .hero_content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.Weddings .hero .hero_content_wrapper .hero_content h1 {
+  font-size: 3.2em;
+  margin: 0px 0px 0.2em;
+}
+.Weddings .hero .hero_content_wrapper .hero_content p {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.Weddings .hero .hero_content_wrapper .hero_content a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 16px;
+  font-size: 1.2em;
+  width: 60%;
+  margin: 2.5em auto;
+}
+.Weddings .hero .hero_content_wrapper .hero_content a:hover {
+  background: #fff;
+  color: #000;
+  transition: background 0.6s ease-in-out;
+}
+.Weddings .Packages .package {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.3em;
+  margin: 1em 0px;
+}
+.Weddings .Packages .package p {
+  margin: unset;
+}
+.Weddings .Packages .package p:nth-child(1) {
+  font-weight: 600;
+}
+.Weddings .Packages .package p:nth-child(3) {
+  font-style: italic;
+}
+
+@media screen and (width >= 600px) {
+  .Weddings .hero .hero_content_wrapper .hero_content h1 {
+    font-size: 3em;
+  }
+  .Weddings .hero .hero_content_wrapper .hero_content p {
+    font-size: 1.2em;
+  }
+  .Weddings .hero .hero_content_wrapper .hero_content a {
+    margin: 3em auto;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .Weddings .Packages .package {
+    grid-template-columns: 3fr 1fr 1fr;
+  }
 }/*# sourceMappingURL=weddings.css.map */

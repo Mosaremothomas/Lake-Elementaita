@@ -8,15 +8,17 @@
         p{
             margin: 6px 0px;
             letter-spacing: 0.4px;
+            opacity: .8;
         }
     }
 }
 
 @media screen and (width >= 726px){
     .About{
-        padding: 5px 5% 10px; 
+        padding: 30px 5% 0px; 
         h1{
-            margin: 2em 0px 10px;
-        }   
+            margin: 0.6em 0px;
+            font-size: 2.1em;
+        }           
     }
 }

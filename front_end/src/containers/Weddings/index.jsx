@@ -66,7 +66,7 @@ export default function Weddings() {
             <p></p>
           </div>
           <div className="package">
-            <p>Buffet lunch plus a soft drink + Use of Sawela grounds per Person (For Pax below 100 a supplement of = Ksh. 150,000 /= is applicable)</p>
+            <p>Buffet lunch plus a soft drink + Use of Manor grounds per Person (For Pax below 100 a supplement of = Ksh. 150,000 /= is applicable)</p>
             <p>Ksh. 150,000 /=</p>
             <p>(Minimum Pax 100 – Maximum 1,000 Pax)</p>
           </div>
@@ -106,12 +106,12 @@ export default function Weddings() {
 
       <div className="content">
         <h2>Transport</h2>
-        <p>Hire of transport from Nairobi to Sawela Lodge in a 25 = Ksh. 35, 000.00 setter Rosa Bus (per Bus per day) – Optional</p>
+        <p>Hire of transport from Nairobi to Manor Lodge in a 25 = Ksh. 35, 000.00 setter Rosa Bus (per Bus per day) – Optional</p>
       </div>
 
       <div className="content">
         <h2>Accommodation</h2>
-        <p>Accommodation at Lake Naivasha Sawela Lodge based on half board basis (dinner Bed and breakfast).</p>
+        <p>Accommodation at Lake Elementaita Manor Lodge based on half board basis (dinner Bed and breakfast).</p>
       </div>
 
       <div className="content">

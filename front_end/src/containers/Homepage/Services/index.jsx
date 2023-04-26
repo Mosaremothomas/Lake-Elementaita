@@ -5,6 +5,7 @@ import './services.css'
 import big5_lounge from '../../../assets/big5-lounge.png'
 import sweeties_restaurant from '../../../assets/sweeties-restaurant.png'
 import lovers_garden from '../../../assets/lovers_garden_.png'
+import weddings from '../../../assets/weddings.png'
 
 export default function Services() {
   return (
@@ -37,7 +38,7 @@ export default function Services() {
         </div>
 
         <div className="weddings">
-            <img src={ sweeties_restaurant } alt="" />
+            <img src={ weddings } alt="" />
             <div className="weddings_info">
                 <h1>Weddings</h1>
                 <p>Lake Elementaita Manor Weddings is a once-in-a-lifetime experience and a wonderful adventure, not just for the bride and groom, but for everyone involved.</p>

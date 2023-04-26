@@ -67,6 +67,7 @@
 .Services .weddings .weddings_info h1 {
   font-size: 3em;
   font-weight: 550;
+  margin: 0px 0px 0.4em;
 }
 .Services .weddings .weddings_info a {
   color: #fff;
@@ -74,7 +75,7 @@
   font-size: 1.5em;
   border: 1px solid #fff;
   padding: 8px 16px;
-  margin: 0.4em 0px;
+  margin: 1em 0px;
   font-weight: 500;
 }
 .Services .weddings .weddings_info a:hover {

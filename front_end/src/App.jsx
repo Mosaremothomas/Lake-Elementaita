@@ -1,9 +1,17 @@
-import Homepage from "./containers/Homepage"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Homepage from './containers/Homepage'
+import Weddings from './containers/Weddings'
 
 function App() {
   return (
     <>
-     <Homepage /> 
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={ <Homepage /> } />
+          <Route path="/weddings" element={ <Weddings /> } />
+        </Routes>
+      </BrowserRouter>     
     </>
   )
 }

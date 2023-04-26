@@ -116,7 +116,7 @@ export default function Weddings() {
 
       <div className="content">
         <h2>Complementary Services for your package</h2>
-        <p>Lake Elementaita Manor will as a good gesture to the Bride throw in the following at noo extra charge depending on the package:</p>
+        <p>Lake Elementaita Manor will as a good gesture to the Bride throw in the following at no extra charge depending on the package:</p>
         <ul>
           <li>01 Bottle of Wine in Honey moon suite</li>
           <li>Flower Petals on the bed</li>

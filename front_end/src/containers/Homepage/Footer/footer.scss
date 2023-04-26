@@ -1,6 +1,25 @@
-footer{
+footer{    
+    $dim_white: rgb(182, 182, 182);
+
     background: #000;
     color: #fff;    
+
+    ul{
+        list-style: none;
+        li{
+            margin: 0.5em 0px;
+            letter-spacing: 0.4px;
+            color: $dim_white;
+            a{
+                text-decoration: none;
+                color: $dim_white;
+                &:hover{
+                    color: lightblue;
+                }
+            }
+        }
+    }
+
     .footer_wrapper{
         padding: 10px 12px;
         text-align: center;
@@ -8,12 +27,11 @@ footer{
             font-size: 1.1em;
             font-weight:600;
             margin: 0px 0px 1em;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.5px;            
         }
         .logo,
         .socials,
-        .location,
-        .working_hours{
+        .useful_links{
             margin: 8px 0px 2.5em;
         }
         .logo{
@@ -29,34 +47,34 @@ footer{
         }
         .socials{
             ul{
-                list-style: none;
                 li{
-                    margin: 0.5em 0px;
-                    letter-spacing: 0.5px;
                     span{
-                        margin: 0px 6px 0px 0px;                        
+                        margin: 0px 6px 0px 0px;   
+                        .icon-tel{
+                            transform: rotate(310deg);
+                        }                     
                     }
+                }
+            }    
+            .social_media_links{
+                display: flex;
+                justify-content: center;
+                gap: 2em;  
+                li{
                     a{
-                        text-decoration: none;
-                        color: #fff;                                              
+                        span{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 5px;    
+                            *{
+                                font-size: 1.2em;
+                            }                                       
+                        }                        
                     }
-                }
-            }            
-        }   
-        .location{
-            iframe{
-                width: 100%;
-                height: 400px;
-                margin: auto;
-            }
-        }     
-        .working_hours{
-            .info{
-                p{
-                    margin: 4px 0px;
-                }
-            }
-        }
+                }           
+            }        
+        }              
     }
     .copyright{
         border-top: 1px solid #424242;
@@ -73,7 +91,7 @@ footer{
     footer{
         .footer_wrapper{
             display: grid;
-            grid-template-columns: auto auto;
+            grid-template-columns: auto auto auto;
             gap: 0px 1em;
         }
     }
@@ -83,13 +101,11 @@ footer{
 @media screen and (width >= 900px) {
     footer{        
         .footer_wrapper{
-            grid-template-columns: auto auto auto auto;      
             padding: 10px 2%;
             text-align: left;
             .logo,
             .socials,
-            .working_hours,
-            .location{
+            .useful_links{
                 padding: 8px 10px;      
                 margin: 0px;                          
                 h4{
@@ -110,23 +126,12 @@ footer{
                         font-style: italic;
                     }
                 }
-            }       
-            .location{
-                iframe{
-                    height: 200px;
+            }     
+            .socials{
+                .social_media_links{
+                    justify-content: unset;
                 }
-            }
-            .working_hours{                
-                .info{                    
-                    padding: 0px;   
-                    p:nth-child(1) {
-                        font-weight: bold;
-                    }
-                    p:nth-child(2){
-                        padding-left: 1em;
-                    }
-                }
-            }
+            }        
         }
     }
 }

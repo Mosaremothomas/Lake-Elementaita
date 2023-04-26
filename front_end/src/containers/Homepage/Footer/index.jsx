@@ -1,4 +1,11 @@
-import { FaPhoneVolume, FaEnvelope, FaInstagram } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+import { 
+    FaPhoneVolume, 
+    FaEnvelope, 
+    FaInstagram,
+    FaFacebook,
+    FaMapMarkerAlt
+} from 'react-icons/fa'
 
 import './footer.css'
 
@@ -7,7 +14,7 @@ import logo from '../../../assets/logo.png'
 export default function Footer() {
     return (
         <footer id="Contact">
-            <div class="footer_wrapper">
+            <div className="footer_wrapper">
                 <div className="logo">
                     <div className="logo_details">
                         <img src={logo} alt="" />
@@ -16,35 +23,31 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div class="socials">
+                <div className="socials">
                     <h4>Contacts</h4>
                     <ul>
-                        <li><span><FaPhoneVolume /></span>+254 785 789 515</li>
-                        <li><span><FaEnvelope /></span>lakeelementaitamanor@gmail.com</li>
-                        <li><a href="https://www.instagram.com/lake_elementaita_manor/" target="_blank"><span><FaInstagram /></span>lake_elementaita_manor</a></li>
+                        <li><span><FaPhoneVolume className="icon-tel" /></span>+254 785 789 515</li>
+                        <li><span><FaEnvelope /></span>lakeelementaitamanor@gmail.com</li>                        
+                        <li><a href="https://goo.gl/maps/e74tJKvrDQRzvUcD9" target="_blank"><span><FaMapMarkerAlt /></span>Location on the Map</a></li>
                     </ul>
-                </div>
+                    <ul className="social_media_links">
+                        <li><a href="https://www.instagram.com/lake_elementaita_manor/" target="_blank"><span><FaInstagram className="icon-instagram" /></span></a></li>
+                        <li><a href="https://www.facebook.com/Lake-Elementaita-Manor-111061331956318" target="_blank"><span><FaFacebook className="icon-facebook" /></span></a></li>
+                    </ul>
+                </div>                
 
-                <div className="working_hours">
-                    <h4>Working Hours</h4>
-                    <div className="info">
-                        <p>Sunday - Saturday</p>
-                        <p>0800 - 1800 hrs</p>
-                    </div>
-                </div>
-
-                <div class="location">
-                    <h4>Location</h4>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5801.276033859455!2d36.27456434423395!3d-0.46284414133206486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1829a1ed0a0e2bd3%3A0xa21ff1784076f169!2sLake%20Elementaita%20Manor!5e0!3m2!1sen!2ske!4v1681126563802!5m2!1sen!2ske"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                <div className="useful_links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#About">About Us</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Gallery">Gallery</a></li>
+                        <li><Link to="/weddings">Weddings</Link></li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="copyright">
+            <div className="copyright">
                 <p>Lake Elementaita Manor. All right reserved &copy; 2023</p>
             </div>
         </footer>

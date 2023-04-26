@@ -53,9 +53,10 @@
 
 @media screen and (width >= 900px){
     .Rooms{
-        padding: 5px 5% 10px; 
+        padding: 30px 5%; 
         h1{
-            margin: 2em 0px 10px;
+            margin: 0.6em 0px;
+            font-size: 2.1em;
         } 
         .rooms_wrapper{
             display: grid;

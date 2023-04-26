@@ -4,7 +4,7 @@ import About from './About'
 import Services from './Services'
 import Rooms from './Rooms'
 import Gallery from './Gallery'
-import Footer from './Footer'
+import Footer from '../../components/Footer'
 
 export default function Homepage(){
     return(

@@ -21,16 +21,16 @@ export default function Weddings() {
       </div>
 
       <div className="content">
-        <p>Manor destination wedding is a an once-in-a-lifetime experience and a wonderful adventure, not just for the bride and groom, but for everyone involved. When you combine the allure of travel, a remarkable location, and an extraordinary cause for celebration, the mix is rich with meaning, memories, and opportunities for bonding.</p>
-        <p>Destination weddings have captured the imagination of the modern bride for a number of reasons. A destination bride may be geographically separated from her family, or she may be marrying someone from another region. She and her fiancé may be avid travelers, driven to broaden their horizons through journeys. There are many reasons to choose a destination wedding and perhaps just as many reasons not to. The decision is not one to be made lightly, and it is important to go through the decision-making process before committing to a marriage celebration far from home.</p>
-        <p>The Manor magnificent gardens are the ultimate location for garden wedding and their receptions, special moments and photo shoots.</p>
+        <p>Lake Elementaita Manor Weddings is a an once-in-a-lifetime experience and a wonderful adventure, not just for the bride and groom, but for everyone involved. When you combine the allure of travel, a remarkable location, and an extraordinary cause for celebration, the mix is rich with meaning, memories, and opportunities for bonding.</p>
+        <p>Lake Elementaita Manor Weddings have captured the imagination of the modern bride for a number of reasons. A destination bride may be geographically separated from her family, or she may be marrying someone from another region. She and her fiancé may be avid travelers, driven to broaden their horizons through journeys. There are many reasons to choose a destination wedding and perhaps just as many reasons not to. The decision is not one to be made lightly, and it is important to go through the decision-making process before committing to a marriage celebration far from home.</p>
+        <p>Lake Elementaita Manor's magnificent gardens are the ultimate location for garden weddings and their receptions, special moments and photo shoots.</p>
 
-        <p>We have based our proposal on the Lake Elementaita Manor Lodge as requested. Manor Lodges has an excellent working knowledge of the lodge and venue proposed and we can therefore personally assure you that the quality and levels of services will meet your group’s expectations.</p>        
+        <p>We have based our proposal on the Lake Elementaita Manor as requested. We have an excellent working knowledge of the venue proposed and we can therefore personally assure you that the quality and levels of services will meet your group’s expectations.</p>        
       </div>
 
       <div className="content">
         <h2>Transport (Optional)</h2>
-        <p>The transportation is based on luxury tour vans / bus with services of qualified English-speaking guides. Manor Lodges uses only the very best providers for all transfers and excursions arrangements. An itemised cost for all services is attached on a separate spread sheet.</p>
+        <p>The transportation is based on luxury tour vans / bus with services of qualified English-speaking guides. Lake Elementaita Manor uses only the very best providers for all transfers and excursions arrangements.</p>
       </div>
 
       <div className="content">
@@ -111,12 +111,12 @@ export default function Weddings() {
 
       <div className="content">
         <h2>Accommodation</h2>
-        <p>Accommodation at Lake Elementaita Manor Lodge based on half board basis (dinner Bed and breakfast).</p>
+        <p>Accommodation at Lake Elementaita Manor  based on half board basis (dinner Bed and breakfast).</p>
       </div>
 
       <div className="content">
         <h2>Complementary Services for your package</h2>
-        <p>The Manor Lodge will as a good gesture to the Bride throw in the following at noo extra charge depending on the package:</p>
+        <p>Lake Elementaita Manor will as a good gesture to the Bride throw in the following at noo extra charge depending on the package:</p>
         <ul>
           <li>01 Bottle of Wine in Honey moon suite</li>
           <li>Flower Petals on the bed</li>

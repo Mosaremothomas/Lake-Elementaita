@@ -21,11 +21,34 @@ export default function Weddings() {
       </div>
 
       <div className="content">
-        <p>Lake Elementaita Manor Weddings is a an once-in-a-lifetime experience and a wonderful adventure, not just for the bride and groom, but for everyone involved. When you combine the allure of travel, a remarkable location, and an extraordinary cause for celebration, the mix is rich with meaning, memories, and opportunities for bonding.</p>
+        <p>Imagine having the wedding of your dreams in a stunning location that's straight out of a fairy tale. Our hotel is the perfect destination for couples looking to tie the knot in style. With two grand mansions that offer luxurious accommodation, a sparkling pool for relaxation, and breathtaking grounds with a view of the lake, your wedding day will be nothing short of magical.</p>
+        <p>Our hotel is the ideal location for couples who want to create unforgettable memories on their wedding day. The grand mansions offer ample space for your guests to stay in comfort and style, with luxurious rooms that are sure to impress. The pool is the perfect place to relax and unwind, and the stunning grounds with a view of the lake provide a breathtaking backdrop for your ceremony and photos.</p>
+        <p>We understand that your wedding day is one of the most important days of your life, and we are committed to making it unforgettable. Our experienced staff will work with you to ensure that every detail is taken care of, from catering and decor to entertainment and photography. We will ensure that your wedding day runs smoothly and flawlessly, so you can focus on enjoying the moment with your loved ones.</p>
+        <p>So if you're looking for a truly magical destination for your wedding day, look no further than our hotel. With two grand mansions, a pool, and stunning grounds with a view of the lake, we offer everything you need to make your wedding day unforgettable. Contact us today to start planning your dream wedding.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* <p>Lake Elementaita Manor Weddings is a an once-in-a-lifetime experience and a wonderful adventure, not just for the bride and groom, but for everyone involved. When you combine the allure of travel, a remarkable location, and an extraordinary cause for celebration, the mix is rich with meaning, memories, and opportunities for bonding.</p>
         <p>Lake Elementaita Manor Weddings have captured the imagination of the modern bride for a number of reasons. A destination bride may be geographically separated from her family, or she may be marrying someone from another region. She and her fiancé may be avid travelers, driven to broaden their horizons through journeys. There are many reasons to choose a destination wedding and perhaps just as many reasons not to. The decision is not one to be made lightly, and it is important to go through the decision-making process before committing to a marriage celebration far from home.</p>
         <p>Lake Elementaita Manor's magnificent gardens are the ultimate location for garden weddings and their receptions, special moments and photo shoots.</p>
 
-        <p>We have based our proposal on the Lake Elementaita Manor as requested. We have an excellent working knowledge of the venue proposed and we can therefore personally assure you that the quality and levels of services will meet your group’s expectations.</p>        
+        <p>We have based our proposal on the Lake Elementaita Manor as requested. We have an excellent working knowledge of the venue proposed and we can therefore personally assure you that the quality and levels of services will meet your group’s expectations.</p>         */}
       </div>
 
       <div className="content">

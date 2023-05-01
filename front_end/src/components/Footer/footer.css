@@ -19,7 +19,6 @@ footer ul li a:hover {
 }
 footer .footer_wrapper {
   padding: 10px 12px;
-  text-align: center;
 }
 footer .footer_wrapper h4 {
   font-size: 1.1em;
@@ -31,6 +30,9 @@ footer .footer_wrapper .logo,
 footer .footer_wrapper .socials,
 footer .footer_wrapper .useful_links {
   margin: 8px 0px 2.5em;
+}
+footer .footer_wrapper .logo {
+  text-align: center;
 }
 footer .footer_wrapper .logo img {
   width: 100px;
@@ -49,13 +51,9 @@ footer .footer_wrapper .socials ul li span .icon-tel {
 }
 footer .footer_wrapper .socials .social_media_links {
   display: flex;
-  justify-content: center;
-  gap: 2em;
+  gap: 1em;
 }
 footer .footer_wrapper .socials .social_media_links li a span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 5px;
 }
 footer .footer_wrapper .socials .social_media_links li a span * {
@@ -72,7 +70,6 @@ footer .copyright p {
 
 @media screen and (width >= 600px) {
   footer .footer_wrapper {
-    text-align: left;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 0px 1em;

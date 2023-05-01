@@ -1,22 +1,33 @@
 .About {
   padding: 10px 12px;
 }
-.About h1 {
+.About .about_content h1 {
   text-align: center;
-  margin: 5px 0px;
+  margin: 1.2em 0px;
 }
 .About .about_content p {
-  margin: 6px 0px;
+  margin: 1rem 0px;
   letter-spacing: 0.4px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-@media screen and (width >= 726px) {
+@media screen and (width >= 600px) {
   .About {
-    padding: 30px 5% 0px;
+    padding: 10px 2rem;
   }
-  .About h1 {
-    margin: 0.6em 0px;
-    font-size: 2.1em;
+}
+@media screen and (width >= 900px) {
+  .About {
+    padding: 0px 6rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .About .about_content h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin: 0px 0px 0.7em;
+    font-weight: 500;
   }
 }/*# sourceMappingURL=about.css.map */

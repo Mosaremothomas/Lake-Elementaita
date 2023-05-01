@@ -22,7 +22,6 @@ footer{
 
     .footer_wrapper{
         padding: 10px 12px;
-        text-align: center;
         h4{
             font-size: 1.1em;
             font-weight:600;
@@ -34,7 +33,10 @@ footer{
         .useful_links{
             margin: 8px 0px 2.5em;
         }
+
+        
         .logo{
+            text-align: center;
             img{
                 width: 100px;
             }
@@ -45,6 +47,7 @@ footer{
                 margin: 8px 0px;
             }
         }
+
         .socials{
             ul{
                 li{
@@ -57,15 +60,11 @@ footer{
                 }
             }    
             .social_media_links{
-                display: flex;
-                justify-content: center;
-                gap: 2em;  
+                display: flex;                
+                gap: 1em;  
                 li{
                     a{
                         span{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
                             padding: 5px;    
                             *{
                                 font-size: 1.2em;
@@ -76,6 +75,7 @@ footer{
             }        
         }              
     }
+
     .copyright{
         border-top: 1px solid #424242;
         padding: 16px 0px;
@@ -90,7 +90,6 @@ footer{
 @media screen and (width >= 600px) {
     footer{
         .footer_wrapper{
-            text-align: left;
             display: grid;
             grid-template-columns: auto auto auto;
             gap: 0px 1em;

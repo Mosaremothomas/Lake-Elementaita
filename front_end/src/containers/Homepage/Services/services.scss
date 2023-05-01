@@ -1,149 +1,192 @@
 .Services{
-    h1{
-        text-align: center;
-        margin: 5px 0px;
+
+    p {
+        margin: 1rem 0px;
+        letter-spacing: 0.4px;
+        opacity: .9;
     }
+
     .services_wrapper{
-        padding: 10px 12px;
+        padding: 10px 12px;        
 
-        .service,
-        img,
-        .description{
-            border-radius: 12px;
-        }
+        .service{    
+            margin: 0px 0px 2em;  
 
-        .service{
-            height: 400px;
-            margin: 1em 0px;
-            position: relative;
-            background: linear-gradient(rgb(130, 1, 180), rgb(129, 128, 128));
-            img{
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                filter: saturate(2);
-            }
-            .description{
-                position: absolute;
-                bottom: 0;
-                background: linear-gradient(160deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-                color: #fff;
-                text-align: center;
-                padding: 10px 6px;
-                h4{
-                    font-weight: bold;
-                    font-size: 1.3em;
-                    margin: 0px 0px 5px 0px;
-                }
-                p{
-                    font-weight: 540;
+            .service_info{
+                h1{
+                    text-align: center;
+                    margin: 1.2em 0px;
+                }   
+                .description {
+                    p{
+                        margin: 1em 0px;
+                    }
                 }
             }
-        }
+
+            .img_container {
+                $border-radius: 16px;
+                height: 300px;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 16px;
+                }
+            }
+        }        
     }
 
-    .weddings{
-        width: 100%;
+    .weddings {      
+        position: relative; 
         height: 60vh;
-        position: relative;
-        margin: 25px 0px 0px;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .img_container{            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
-        .weddings_info{
+
+        .weddings_info {
             position: absolute;
             top: 0;
             height: 100%;
-            width: 100%;
-            padding: 0.5em 1em;
-            background: linear-gradient(145deg, rgba(0,0,0,0.5), rgba(0,0,0,0.6));
-            color: #fff;            
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: center;            
+            background: rgba(0, 0, 0, .5);
+            color: #fff;
+            padding: 1em 1.2em;
+
             h1{
-                font-size: 3em;  
-                font-weight: 550;    
-                margin: 0px 0px 0.4em;          
-            }  
-            p {
-                margin: 0px 0px 0.5em;
-            }          
-            a{
-                color: #fff;
+                text-align: center;
+                font-size: 2.4rem;
+            }         
+            
+            a {
                 text-decoration: none;
-                font-size: 1.5em;
-                border: 2px solid #fff;
-                padding: 8px 16px;
-                margin: 1em 0px;
-                font-weight: 500;
-                &:hover{
-                    background: #fff;
-                    color: #000;
-                    transition: background 0.6s ease-in-out;
-                }
+                color: #fff;
+                border: 2px solid;
+                border-radius: 32px;
+                width: 60%;
+                margin: 0px auto;
+                text-align: center;
+                padding: 16px 32px;   
+                font-weight: bold;    
+                font-size: 1.2rem;         
             }
         }
     }
 }
 
 
-@media screen and (width >= 600px){
-    .Services{
-        .services_wrapper{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0px 1em;
-        }
-    }
-}
 
+@media screen and (width >= 600px) {
+    .Services{              
+        .services_wrapper {
+            padding: 10px 2rem; 
 
-@media screen and (width >= 900px){
-    .Services{     
-        padding: 25px 0px;   
-        h1{
-            margin: 0.6em 0px 0px;
-            font-size: 2.1em;
-        } 
-        .services_wrapper{
-            padding: 10px 5%; 
-            grid-template-columns: repeat(3, 1fr);
-            .service,
-            img,
-            .description{
-                border-radius: unset;
-            }
-
-            .service{
-                img{
-                    &:hover{
-                        filter: saturate(3);
-                        transition: width 0.5s ease;
+            .service {
+                .container {                                       
+                    .service_info {
+                        h1 {
+                            text-align: left;
+                        }
+                    }
+                    
+                    .img_container {
+                        height: unset;
+                        img {
+                            border-radius: unset;
+                        }
                     }
                 }
             }
         }
 
-        .weddings{
-            height: 85vh;            
-            .weddings_info{          
-                padding: 0px 15%;      
-                h1{
-                    font-size: 2.5em;
-                }
-                p{
-                    text-align: left;                      
-                    font-size: 1.1em;
-                    font-weight: 500;                                        
-                }
-                a{
-                    margin: 1em 0px;
+        .weddings {
+            .weddings_info {
+                justify-content: center;
+                gap: 2.5em;
+                padding: 2.5em;
+
+                a {
+                    width: 40%;
                 }
             }
         }
     }
+}
+
+
+
+@media screen and (width >= 900px) {
+    .Services {
+        .services_wrapper {
+            padding: 0px 6rem;
+
+            .service {                
+                .container {
+                    position: relative;
+                    height: 80vh;
+
+                    .service_info {
+                        background: rgb(255, 255, 255);
+                        width: 60%;                        
+                        position: absolute;
+                        top: 10%;
+                        left: 6em;
+                        z-index: 1;
+                        padding: 10px 1.5em;                        
+                    }
+    
+                    .img_container {   
+                        position: absolute;
+                        right: 0;                 
+                        height: 100%;   
+                        width: 55%;      
+                        img {
+                            border-radius: 16px;
+                        }     
+                    }                     
+                }     
+                
+                
+                &:nth-child(even) {
+                    .container {
+                        .service_info {
+                            left: unset;
+                            right: 4em;
+                        }
+
+                        .img_container {
+                            left: 0;
+                        }
+                    }                    
+                }
+            }            
+        }
+
+        .weddings {
+            height: 90vh;
+
+            .img_container {
+                height: 100%;
+            }
+
+            .weddings_info {                
+                gap: 1em;
+
+                h1{
+                    font-size: 3.5rem;
+                }
+                a {
+                    width: 18%;
+                    padding: 12px;
+                }
+            }
+        }
+    }        
 }

@@ -7,10 +7,8 @@ export default function Navbar() {
             <div className="logo">
                 <a href="#hero">Lake Elemenentaita Manor</a>
             </div>
-            <ul className="nav_links">
-                <li><a href="#Hero">Home</a></li>
+            <ul className="nav_links">                
                 <li><a href="#About">About</a></li>
-                <li><a href="#Services">Services</a></li>
                 <li><a href="#Gallery">Gallery</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>

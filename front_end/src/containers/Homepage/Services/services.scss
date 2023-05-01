@@ -7,26 +7,28 @@
     }
 
     .services_wrapper{
-        padding: 10px 12px;        
+        padding: 10px 10px;        
 
         .service{    
             margin: 0px 0px 2em;  
 
-            .service_info{
-                h1{
-                    text-align: center;
-                    margin: 1.2em 0px;
-                }   
-                .description {
-                    p{
-                        margin: 1em 0px;
-                    }
+            h1{
+                text-align: center;
+                margin: 1.2em 0px;
+            }  
+
+            .service_info{                 
+                p{
+                    margin: 0px 0px 1em;
                 }
             }
 
             .img_container {
                 $border-radius: 16px;
                 height: 300px;
+                margin: 0px 0px 1em;
+                background: rgb(82, 81, 81);
+                border-radius: $border-radius;
 
                 img{
                     height: 100%;
@@ -41,7 +43,8 @@
     .weddings {      
         position: relative; 
         height: 60vh;
-        .img_container{            
+        .img_container{  
+            height:  100%;         
             img{
                 width: 100%;
                 height: 100%;
@@ -88,19 +91,10 @@
         .services_wrapper {
             padding: 10px 2rem; 
 
-            .service {
-                .container {                                       
-                    .service_info {
-                        h1 {
-                            text-align: left;
-                        }
-                    }
-                    
+            .service {             
+                .container {                    
                     .img_container {
-                        height: unset;
-                        img {
-                            border-radius: unset;
-                        }
+                        height: 450px;                        
                     }
                 }
             }
@@ -109,7 +103,7 @@
         .weddings {
             .weddings_info {
                 justify-content: center;
-                gap: 2.5em;
+                gap: 1.5em;
                 padding: 2.5em;
 
                 a {
@@ -125,46 +119,35 @@
 @media screen and (width >= 900px) {
     .Services {
         .services_wrapper {
-            padding: 0px 6rem;
+            .service {
+                position: relative;
 
-            .service {                
-                .container {
-                    position: relative;
-                    height: 80vh;
+                h1 {
+                    position: absolute;
+                    top: 1em;
+                    left: calc((50%) + 0.7em);
+                }
 
-                    .service_info {
-                        background: rgb(255, 255, 255);
-                        width: 60%;                        
-                        position: absolute;
-                        top: 10%;
-                        left: 6em;
-                        z-index: 1;
-                        padding: 10px 1.5em;                        
-                    }
-    
-                    .img_container {   
-                        position: absolute;
-                        right: 0;                 
-                        height: 100%;   
-                        width: 55%;      
-                        img {
-                            border-radius: 16px;
-                        }     
-                    }                     
-                }     
-                
-                
-                &:nth-child(even) {
+                .container{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    align-items: center;
+                    gap: 2em;                                        
+                }
+
+                &:nth-child(even) {   
+                    h1 {                        
+                        left: 0;
+                    }   
+
                     .container {
-                        .service_info {
-                            left: unset;
-                            right: 4em;
+                        .services_info {
+                            order: 2;
                         }
-
                         .img_container {
-                            left: 0;
+                            order: 1;
                         }
-                    }                    
+                    }
                 }
             }            
         }
@@ -177,10 +160,11 @@
             }
 
             .weddings_info {                
-                gap: 1em;
+                gap: .0.5em;
+                padding: 4em;
 
                 h1{
-                    font-size: 3.5rem;
+                    font-size: 3rem;
                 }
                 a {
                     width: 18%;

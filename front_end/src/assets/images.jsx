@@ -1,5 +1,6 @@
 import big5Lounge from './big5Lounge.png'
 import bushLunch from './bushLunch.png'
+import coupleHorseride from './couple_horseride.png'
 import entrance01 from './entrance01.png'
 import entrance02 from './entrance02.png'
 import horseRide from './horseRide.png'
@@ -14,6 +15,7 @@ import zenGarden from './zenGarden.png'
 const images = {
     big5Lounge: big5Lounge,
     bushLunch: bushLunch,
+    coupleHorseride: coupleHorseride,
     entrance01: entrance01,
     entrance02: entrance02,
     horseRide: horseRide,

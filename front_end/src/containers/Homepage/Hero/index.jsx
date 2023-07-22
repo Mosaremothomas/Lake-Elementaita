@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="Hero" id="Hero">
         <div className="hero_info">
             <h1>Lake Elementaita Manor</h1>
-            <p>Family styles vacation rental</p>
+            <p>Family style vacation rental</p>
         </div>
     </section>
   )

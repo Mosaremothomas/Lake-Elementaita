@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+
 import { 
     FaPhoneVolume, 
     FaEnvelope, 
@@ -43,7 +44,6 @@ export default function Footer() {
                         <li><a href="#About">About Us</a></li>
                         <li><a href="#Services">Services</a></li>
                         <li><a href="#Gallery">Gallery</a></li>
-                        <li><Link to="/weddings">Weddings</Link></li>
                     </ul>
                 </div>
             </div>

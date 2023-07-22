@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 import './services.css'
 
 import images from '../../../assets/images'
@@ -71,18 +69,25 @@ export default function Services() {
                     </div>                      
                 </div>             
             </div>
-        </div>       
 
-        <div className="weddings">
-            <div className="img_container">
-                <img src={ images.weddings } alt="Weddings" />
-            </div>            
-            <div className="weddings_info">
+            <div className="service">
                 <h1>Weddings</h1>
-                <p>Imagine having the wedding of your dreams in a stunning location that's straight out of a fairy tale. Our hotel is the perfect destination for couples looking to tie the knot in style. With two grand mansions that offer luxurious accommodation, a sparkling pool for relaxation, and breathtaking grounds with a view of the lake, your wedding day will be nothing short of magical.</p>                
-                <Link to="/weddings">Discover More</Link>
+
+                <div className="container">
+                    <div className="img_container">
+                        <img src={ images.coupleHorseride } alt="Couple Horse riding" />
+                    </div>
+
+                    <div className="service_info">
+                        <p>Imagine having the wedding of your dreams in a stunning location that's straight out of a fairy tale, with two grand mansions, a sparkling pool, and breathtaking grounds overlooking the lake. Our luxurious rooms ensure that your guests will have a comfortable stay, and the stunning scenery is an ideal backdrop for your ceremony and photographs.</p>
+
+                        <p>We understand the importance of your wedding day and are committed to making it unforgettable. Our experienced staff will take care of every detail, from catering and decor to entertainment and photography, ensuring that your day runs smoothly and flawlessly. So, you can focus on enjoying the moment with your loved ones.</p>
+
+                        <p>So if you're looking for a truly magical destination for your wedding day, look no further than our hotel. We offer everything you need to make your wedding day unforgettable. Contact us today to start planning your dream wedding</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </div>       
     </section>
   )
 }

@@ -4,7 +4,6 @@ import logo from '../../../assets/logo.png'
 import entrance01 from '../../../assets/entrance01.png'
 import entrance02 from '../../../assets/entrance02.png'
 import lovers from '../../../assets/zenGarden.png'
-import wine_glass from '../../../assets/wineGlass.png'
 import horse_ride from '../../../assets/horseRide.png'
 import meal from '../../../assets/meal.png'
 import sunset from '../../../assets/sunset.png'
@@ -32,11 +31,7 @@ export default function Gallery() {
 
                 <div className="gallery">
                     <img src={ meal } alt="" />
-                </div>
-
-                <div className="gallery">
-                    <img src={wine_glass} alt="" />
-                </div>                
+                </div>              
 
                 <div className="gallery">
                     <img src={ horse_ride } alt="" />
